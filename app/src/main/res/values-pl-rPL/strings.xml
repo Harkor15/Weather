@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pogoda</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="favourites">Ulubione</string>
+    <string name="city">Miasto</string>
+    <string name="localisation">Lokalizacja</string>
+    <string name="checkFromGps">Sprawdzić lokalizację z GPS?</string>
+    <string name="yes">Tak</string>
+    <string name="no">Nie</string>
+    <string name="clouds">Zachmurzenie</string>
+    <string name="pressure">Ciśnienie</string>
+    <string name="humidity">Wilgotność</string>
+    <string name="wind">Wiatr</string>
+    <string name="icon">ikona</string>
+    <string name="current_weather">Aktualna pogoda</string>
+    <string name="forecast">Prognoza</string>
+    <string name="temperature_unit">Jendostka temperatury</string>
+    <string name="main_city_changed">Miasto zmienione</string>
+    <string name="add_city_favourites">Dodaj miasto do ulubionych</string>
+    <string name="city_not_found">Nie znaleziono miasta</string>
+    <string name="cancel">Anuluj</string>
+    <string name="map">Mapa</string>
+    <string name="add_city_from_map">Dodaj miasto z mapy</string>
+    <string name="choose_city">Wybierz miasto</string>
+    <string name="check_city">Wybierz miasto</string>
+    <string name="click_on_map_to_choose_city">Kliknij na mapę aby wybrać miasto</string>
+</resources>

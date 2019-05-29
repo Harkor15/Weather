@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="action_settings">Settings</string>
+    <string name="favourites">Favourites</string>
+    <string name="city">City:</string>
+    <string name="localisation">Localisation</string>
+    <string name="checkFromGps">Check main city from GPS?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="clouds">Clouds</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind">Wind</string>
+    <string name="icon">icon</string>
+    <string name="current_weather">Current weather</string>
+    <string name="forecast">Forecast</string>
+    <string name="temperature_unit">Temperature unit</string>
+    <string name="celsius" translatable="false">℃</string>
+    <string name="fehrenheit" translatable="false">℉</string>
+    <string name="kelvin" translatable="false">K</string>
+    <string name="main_city_changed">Main city changed</string>
+    <string name="add_city_favourites">Add city to favourites</string>
+    <string name="city_not_found">City not found</string>
+    <string name="choose_city">Choose a city</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok" translatable="false">ok</string>
+    <string name="map">Map</string>
+    <string name="add_city_from_map">Add city from map</string>
+    <string name="check_city">Check city</string>
+    <string name="click_on_map_to_choose_city">Click on map to select city</string>
+</resources>

@@ -31,6 +31,7 @@ import harkor.weather.R;
 import harkor.weather.Services.RealmDatabaseController;
 import harkor.weather.ViewModel.SettingsViewModel;
 import io.realm.Realm;
+import io.realm.RealmConfiguration;
 
 public class SettingsActivity extends AppCompatActivity implements FavouritesListAdapter.ItemClickListener, SettingsViewModelInterface {
     FavouritesListAdapter listViewFavouritesAdapter;
@@ -43,6 +44,7 @@ public class SettingsActivity extends AppCompatActivity implements FavouritesLis
     @BindView(R.id.add_from_map_btn)Button addFromMap;
     @BindView(R.id.temperature_unit_group)RadioGroup radioGroup;
     @BindView(R.id.add_favourites_button) ImageView addCityButton;
+
 
 
     @Override

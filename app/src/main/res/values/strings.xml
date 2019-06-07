@@ -28,4 +28,5 @@
     <string name="add_city_from_map">Add city from map</string>
     <string name="check_city">Check city</string>
     <string name="click_on_map_to_choose_city">Click on map to select city</string>
+    <string name="main_city">Main city:</string>
 </resources>

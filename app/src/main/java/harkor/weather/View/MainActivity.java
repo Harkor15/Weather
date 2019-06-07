@@ -27,6 +27,7 @@ import butterknife.ButterKnife;
 import harkor.weather.Adapters.PagerAdapter;
 import harkor.weather.Interfaces.GpsResultInterface;
 import harkor.weather.Model.SingleCityPOJO;
+
 import harkor.weather.R;
 import harkor.weather.Services.MyLocationListener;
 import harkor.weather.Services.RealmDatabaseController;
@@ -113,10 +114,10 @@ public class MainActivity extends AppCompatActivity implements GpsResultInterfac
     void reamlConfiguraton(){
         Realm.init(getApplicationContext());
 
-        RealmConfiguration config = new RealmConfiguration
-                .Builder()
-                .deleteRealmIfMigrationNeeded()
-                .build();
+       // RealmConfiguration config = new RealmConfiguration
+        //        .Builder()
+        //        .deleteRealmIfMigrationNeeded()
+        //        .build();
     }
 
     void setMainCity(){

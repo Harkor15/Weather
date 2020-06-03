@@ -5,15 +5,12 @@ import java.util.ArrayList;
 
 public class ForecastResponse {
     ArrayList<List> list;
-
     public void setList(ArrayList<List> list) {
         this.list = list;
     }
-
     public ArrayList<List> getList() {
         return list;
     }
-
     public ArrayList<WeatherObject> getWeatherObjects(){
         DecimalFormat df=new DecimalFormat("#");
         ArrayList<WeatherObject> weatherObjects=new ArrayList<>();
@@ -28,7 +25,6 @@ public class ForecastResponse {
         }
         return weatherObjects;
     }
-
 
     class List {
         Main main;

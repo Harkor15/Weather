@@ -32,7 +32,6 @@ import harkor.weather.R;
 import harkor.weather.Services.MyLocationListener;
 import harkor.weather.Services.RealmDatabaseController;
 import io.realm.Realm;
-import io.realm.RealmConfiguration;
 import static android.Manifest.permission.ACCESS_COARSE_LOCATION;
 
 public class MainActivity extends AppCompatActivity implements GpsResultInterface {
@@ -50,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements GpsResultInterfac
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         setTabLayout();
-        reamlConfiguraton();
+        realmConfiguration();
 
         ImageView settingsButton = findViewById(R.id.imege_settings);
         settingsButton.setOnClickListener(new View.OnClickListener() {
@@ -111,19 +110,13 @@ public class MainActivity extends AppCompatActivity implements GpsResultInterfac
         return builder;
     }
 
-    void reamlConfiguraton(){
+    void realmConfiguration(){
         Realm.init(getApplicationContext());
-
-       // RealmConfiguration config = new RealmConfiguration
-        //        .Builder()
-        //        .deleteRealmIfMigrationNeeded()
-        //        .build();
     }
 
     void setMainCity(){
         RealmDatabaseController realmDatabaseController = new RealmDatabaseController();
         SingleCityPOJO mainCity = realmDatabaseController.getMainCity();
-
         if(mainCity==null){
             AlertDialog dialog=getAlertBuilder().create();
             dialog.show();
@@ -165,10 +158,7 @@ public class MainActivity extends AppCompatActivity implements GpsResultInterfac
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==2){
             if(resultCode== Activity.RESULT_OK){
-                //TODO:Refresh fragments
                 viewPager.setAdapter(pagerAdapter);
-
-                Log.d("weather-test-refresh","true");
             }
         }
     }

@@ -1,16 +1,13 @@
 package harkor.weather.Adapters;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.text.DecimalFormat;
-
 import harkor.weather.Model.WeatherObject;
 import harkor.weather.R;
 import harkor.weather.Services.RealmDatabaseController;
@@ -102,7 +99,6 @@ public class MyListAdapter extends BaseAdapter {
                 break;
         }
 
-        Log.d("view", ""+ position);
         return rowView;
     }
 }

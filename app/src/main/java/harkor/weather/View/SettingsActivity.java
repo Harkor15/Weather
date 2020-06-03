@@ -46,7 +46,6 @@ public class SettingsActivity extends AppCompatActivity implements FavouritesLis
     @BindView(R.id.add_favourites_button) ImageView addCityButton;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -112,7 +111,6 @@ public class SettingsActivity extends AppCompatActivity implements FavouritesLis
                 break;
         }
 
-
         favouriteCitys=settingsViewModel.getListOfFavourites();
         listViewFavouritesAdapter=new FavouritesListAdapter(getApplicationContext(),favouriteCitys);
         favouritesList.setLayoutManager(new LinearLayoutManager(this));
@@ -124,7 +122,6 @@ public class SettingsActivity extends AppCompatActivity implements FavouritesLis
             favouritesListAdapter.setMainColor(startMainCity.getCity());
         }
         favouritesList.setAdapter(favouritesListAdapter);
-
 
         addCityButton.setOnClickListener(new View.OnClickListener() {
             @Override

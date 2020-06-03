@@ -1,11 +1,7 @@
 package harkor.weather.API;
 
-import android.util.Log;
-
-
 import java.util.ArrayList;
 import java.util.List;
-
 import harkor.weather.Interfaces.NominatimAfterResponseInterface;
 import harkor.weather.Model.NominatimObject;
 import harkor.weather.Model.NominatimSearchResponse;
@@ -32,7 +28,6 @@ public class NominatimResponseMenager {
 
             @Override
             public void onFailure(Call<List<NominatimSearchResponse>> call, Throwable t) {
-                Log.d("Retrofit Error",t.toString());
             }
         });
     }

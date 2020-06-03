@@ -1,11 +1,7 @@
 package harkor.weather.ViewModel;
 
-import android.util.Log;
-
-
 import java.util.ArrayList;
 import java.util.List;
-
 import harkor.weather.API.NominatimResponseMenager;
 import harkor.weather.Interfaces.AddCityToRealmDbInterface;
 import harkor.weather.Interfaces.NominatimAfterResponseInterface;
@@ -27,7 +23,6 @@ public class SettingsViewModel implements NominatimAfterResponseInterface, AddCi
     }
 
     public void addCity(SingleCityPOJO city){
-        Log.d("weather-test", "addCity vm");
         realmDatabaseController.addCity(city,this);
     }
 
@@ -53,7 +48,6 @@ public class SettingsViewModel implements NominatimAfterResponseInterface, AddCi
         if(nominatimObjects.size()==0){
             settingsViewModelInterface.noRespond();
         }else if(nominatimObjects.size()==1){
-            Log.d("weather-test-nominatim","Lon "+nominatimObjects.get(0).getLon()+" Lat "+nominatimObjects.get(0).getLat());
             realmDatabaseController.addCity(new SingleCityPOJO(cityName,nominatimObjects.get(0).getLon(),nominatimObjects.get(0).getLat()),this);
         }else{
             settingsViewModelInterface.manyResponds(nominatimObjects,cityName);
@@ -63,12 +57,10 @@ public class SettingsViewModel implements NominatimAfterResponseInterface, AddCi
     @Override
     public void cityAdded(SingleCityPOJO singleCityPOJO) {
         settingsViewModelInterface.oneRespond(singleCityPOJO);
-        Log.d("weather-test", "City added");
+
     }
 
     @Override
-    public void duplicate() {
-        Log.d("weather-test", "Duplicated city");
-    }
+    public void duplicate() { }
 }
 

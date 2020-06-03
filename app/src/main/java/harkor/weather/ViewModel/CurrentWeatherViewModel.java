@@ -26,7 +26,6 @@ public class CurrentWeatherViewModel implements CurrentWeatherSetAfterResponse {
              responseMenager.getActualWeather(new WeatherData(singleCityPOJO.getLongitude().toString(),
                      singleCityPOJO.getLatitude().toString()),this);
          }
-
     }
 
     private SingleCityPOJO getMainCity(){

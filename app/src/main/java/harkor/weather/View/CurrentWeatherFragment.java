@@ -10,9 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import org.joda.time.DateTime;
-
 import java.text.DecimalFormat;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import harkor.weather.Interfaces.CurrentWeatherInterface;
@@ -38,7 +36,6 @@ public class CurrentWeatherFragment extends Fragment implements CurrentWeatherIn
         final CurrentWeatherViewModel tabOneViewModel=new CurrentWeatherViewModel(this);
         tabOneViewModel.setData();
         ButterKnife.bind(this,view);
-
         refreshImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

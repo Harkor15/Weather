@@ -49,10 +49,5 @@ public class FiveDaysWeatherFragment extends Fragment implements FiveDaysWeather
         RecyclerView.LayoutManager layoutManager=new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(forecastRecyclerViewAdapter);
-
-        Log.d("weatherLenSend",weatherObjects.length+"");
-
-
-
     }
 }

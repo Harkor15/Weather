@@ -10,7 +10,6 @@ public class WeatherData {
         this.latitude = latitude;
         appid="73ce5a6d43a2c4278462796311770958";
     }
-
     public String getLongitude() {
         return longitude;
     }

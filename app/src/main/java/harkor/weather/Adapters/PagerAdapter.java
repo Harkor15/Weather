@@ -3,8 +3,6 @@ package harkor.weather.Adapters;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-
-
 import harkor.weather.View.CurrentWeatherFragment;
 import harkor.weather.View.FiveDaysWeatherFragment;
 import harkor.weather.View.MapFragment;
